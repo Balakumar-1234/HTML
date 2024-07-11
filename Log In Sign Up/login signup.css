@@ -1,0 +1,83 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 26vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:skyblue;
+}
+
+.container {
+    text-align: center;
+}
+
+.form-container {
+    width: 300px;
+    perspective: 1000px; /* Necessary for 3D transforms */
+}
+
+.form {
+    background-color:red;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    transition: transform 0.6s ease-in-out;
+}
+
+.form-login {
+    transform: rotateY(90deg);
+}
+
+.form-signup {
+    transform: rotateY(-360deg);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color:red;
+}
+
+p {
+    margin-top: 10px;
+}
+
+p a {
+    color: #007BFF;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+p a:hover {
+    text-decoration-color: #007BFF;
+    text-decoration: underline;
+}
